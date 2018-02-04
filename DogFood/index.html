@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dog Food Comparison</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+        <div class="grid-page">
+            <ul class="nav">
+                <li>
+                    <a href="http://www.mattmccherry.com/">Portfolio</a>
+                </li>
+                <li>
+                    <a href="http://www.mattmccherry.com/">Coding Examples</a>
+                </li>
+                <li>
+                    <a href="http://mattmccherry.com/">Other Works</a>
+                </li>
+            </ul>
+            <div class="header">
+                    <div class="heroHeader">
+                        <h1>Comparing Dog Foods using Javascript</h1>
+                    </div>
+            </div>
+            <div class="heroHead"></div>
+            <div class="content">
+                <article>
+                    
+                    <p>After a recent addition to the family, myself and my partner have spent some time researching dog foods. As she is in the scientific field she is very interested in the nuitritional value from each food but we could not find a site that compared foods very well.</p>
+                    
+                    <p>It was interesting working on something to solve a particular problem and this is now something my partner uses when checking foods against each other. Potentially, this could be a useful future app!</p>
+                    
+                    <p>This tables contents (other than the titles) are fully created and inserted within JavaScript.</p>
+                    
+                    <p>You can look over my code for this on my GitHub in project examples.</p>
+                    
+                    <table id='comparison'>
+                        <tr>
+                            <th class='title'>Food Name</th>
+                            <th class='name'>
+                                <select id="dogFoodOption" onchange="Input.selection();">
+                                    <option value="empty">Select Food</option>
+                                </select>
+                            </th>
+                            <th class='name'>
+                                <select id="dogFoodOption" onchange="Input.selection();">
+                                    <option value="empty">Select Food</option>   
+                                </select>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td class='title'>Ingredients</td>
+                            <td class='ingredients'></td>
+                            <td class='ingredients'></td>
+                        </tr>
+                        <tr>
+                            <td class='title'>Protein</td>
+                            <td class='protein'></td>
+                            <td class='protein'></td>
+                        </tr>
+                        <tr>
+                            <td class='title'>Fat</td>
+                            <td class='fat'></td>
+                            <td class='fat'></td>
+                        </tr>
+                        <tr>
+                            <td class='title'>Fibre</td>
+                            <td class='fibre'></td>
+                            <td class='fibre'></td>
+                        </tr>
+                        <tr>
+                            <td class='title'>Ash</td>
+                            <td class='ash'></td>
+                            <td class='ash'></td>
+                        </tr>
+                        <tr>
+                            <td class='title'>Carbs</td>
+                            <td class='carbs'></td>
+                            <td class='carbs'></td>
+                        </tr>
+                    </table>  
+                    <h2>Add your own dog food!</h2>
+<!--
+                    <table id='comparison' class='inputsTable'>
+                        <tr>
+                            <th class='title'>Food Name*</th>
+                            <th>
+                                <input type="text" class="name">
+                            </th>
+                        </tr>
+                        <tr>
+                            <td class='title'>Ingredients</td>
+                            <td>
+                                <textarea rows="10" cols="20" placeholder="Input your ingredients! This isn't a required field." class="ingredients"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class='title'>Protein*</td>
+                            <td>
+                                <input type="number" class="protein">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class='title'>Fat*</td>
+                            <td>
+                                <input type="number" class="fat">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class='title'>Fibre*</td>
+                            <td>
+                                <input type="number" class="fibre">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class='title'>Ash*</td>
+                            <td>
+                                <input type="number" class="ash">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class='title'>Carbs*</td>
+                            <td>
+                                <input type="number" class="carbs" >
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class='submit'>
+                                <button type="submit" name="submit" value="submit">Submit</button>
+                            </td>
+                        
+                            </tr>
+                    </table>
+-->
+                    
+                    <form id='comparison' class='inputsForm'>
+                        <div>
+                            <lable for="name">Food Name*:</lable>
+                            <input type="text" class="name" step="any">
+                        </div>
+                        <div>
+                            <lable for="name">Ingredients:</lable>
+                            <textarea rows="10" cols="20" placeholder="Input your ingredients! This isn't a required field." class="ingredients"></textarea>
+                        </div>
+                        <div>
+                            <lable for="name">Protein*:</lable>
+                            <input type="number" class="protein" step="any">
+                        </div>
+                        <div>
+                            <lable for="name">Fat*:</lable>
+                            <input type="number" class="fat" step="any">
+                        </div>
+                        <div>
+                            <lable for="name">Fibre*:</lable>
+                            <input type="number" class="fibre" step="any">
+                        </div>
+                        <div>
+                            <lable for="name">Ash*:</lable>
+                            <input type="number" class="ash" step="any">
+                        </div>
+                        <div>
+                            <lable for="name">Carbs*:</lable>
+                            <input type="number" class="carbs" step="any">
+                        </div>
+                        <div>
+                            <button type="submit" name="submit" value="submit" step="any">Submit</button>
+                        </div>
+                    </form>
+                    
+                    <p>Additionally, keeping track of every dog food would be difficult so having users the ability to input their own food to compare other dog foods.</p>
+                    
+                    <p>Obviously, try it out yourself and look over my code on Github! Be sure to check out my other coding examples.</p>
+                    
+                    <p>Here's a picture of the pup too! Meet Dotty.</p>
+                    
+                    <img class="contentimg" src="images/dottyPuppy.jpg" alt="Dotty the puppy golden retriever, close up, looking directly at the camer ready to go for a walk!">
+                    
+                </article>
+            </div>
+            <div class="footer">FOOTER</div>
+        </div>
+    <script src='js/pageFunctionality.js'></script>
+<script src='js/food.js'></script>
+<script src='js/dogfoods_UI.js'></script>
+<script src='js/app.js'></script>
+</body>
+</html>
